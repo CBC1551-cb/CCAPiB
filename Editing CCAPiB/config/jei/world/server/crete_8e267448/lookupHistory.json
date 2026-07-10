@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"aeronautics:andesite_propeller"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:andesite_alloy"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

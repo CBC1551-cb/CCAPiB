@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"createpropulsionsimulated:thruster"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createpropulsionsimulated:turpentine"},"type":"fluid_stack","bookmarkType":"INGREDIENT"}
+]

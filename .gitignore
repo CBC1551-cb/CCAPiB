@@ -1,0 +1,16 @@
+.mixin.out/
+.probe/
+.replay_cache/
+.vscode/
+crash-reports/
+essential/
+logs/
+replay_recordings/
+saves/
+schematics/
+screenshots/
+shaderpacks/
+XaeroWaypoints_BACKUP240807
+usercache.json
+usernamecache.json
+whitelist.json

@@ -1,0 +1,21 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"createbigcannons:cast_iron_quickfiring_breech"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:steel_quickfiring_breech"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createbigcannons:quickfiring_mechanism"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"createbigcannons:cannon_carriage","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"createbigcannons:cannon_carriage"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"dndesires:omni_gearbox"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"dndesires:inverse_gearshift"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:engine_gearbox"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:directional_gearshift"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:torsion_spring"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:spring"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"dndesires:splashing_sail"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:sail_frame"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:white_sail"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:gearshift"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_connected:inverted_gearshift"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_connected:inverted_clutch"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:handheld_worldshaper"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
