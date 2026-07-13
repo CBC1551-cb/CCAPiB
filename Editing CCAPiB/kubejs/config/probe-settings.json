@@ -1,3 +1,11 @@
 {
-    "probejs.newGame": false
+    "probejs.newGame": false,
+    "probejs.fullScanMods": [
+        "minecraft",
+        "kubejs",
+        "neoforge",
+        "create",
+        "create metallurgy",
+        "tfmg"
+    ]
 }

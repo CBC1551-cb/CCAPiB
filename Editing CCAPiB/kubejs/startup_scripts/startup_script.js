@@ -31,6 +31,8 @@ StartupEvents.registry('item', event => {
     event.create('rod_sand_mold').maxStackSize(1).displayName('Sand Rod Mold').tag('createmetallurgy:sand_molds')
 
     event.create('gear_sand_mold').maxStackSize(1).displayName('Sand Gear Mold').tag('createmetallurgy:sand_molds')
+
+    event.create('sand_mold_mix').displayName('Sand Mold Mix')
 })
 
 // #######################################################################################

@@ -32,12 +32,12 @@ ServerEvents.tags('item', event => {
     ].forEach((ItemID) => {event.removeAllTagsFrom((ItemID))});
     event.add('createmetallurgy:sand_molds');
     [
-        'kubejs:sand_blank_mold',
-        'kubejs:sand_ingot_mold',
-        'kubejs:sand_nugget_mold',
-        'kubejs:sand_plate_mold',
-        'kubejs:sand_gear_mold',
-        'kubejs:sand_rod_mold'
+        'kubejs:blank_sand_mold',
+        'kubejs:ingot_sand_mold',
+        'kubejs:nugget_sand_mold',
+        'kubejs:plate_sand_mold',
+        'kubejs:gear_sand_mold',
+        'kubejs:rod_sand_mold'
     ].forEach((MoldID) => {
         event.add('createmetallurgy:sand_molds', (MoldID))
     });
@@ -57,7 +57,8 @@ ServerEvents.recipes(event => {
     // #############################################################
     // Remove by recipe ID
     [
-        'tfmg:casting/steel'
+        'tfmg:casting/steel',
+        'createmetallurgy:crafting/materials/graphite'
     ].forEach((RecipeID) => {event.remove({id: (RecipeID)})});
 
     // Remove by recipe Type
@@ -79,6 +80,12 @@ ServerEvents.recipes(event => {
         'cgs:steel_nugget',
         'createnuclear:steel_nugget',
         'createbigcannons:steel_nugget',
+        'createmetallurgy:graphite_blank_mold',
+        'createmetallurgy:graphite_ingot_mold',
+        'createmetallurgy:graphite_nugget_mold',
+        'createmetallurgy:graphite_plate_mold',
+        'createmetallurgy:graphite_rod_mold',
+        'createmetallurgy:graphite_gear_mold'
     ].forEach((OutputID) => {event.remove({output: (OutputID)})});
 
     // Remove by input ID
@@ -96,7 +103,7 @@ ServerEvents.recipes(event => {
 
     // Add crafting recipes
 
-    event.shaped('kubejs:blank_sand_mold', 
+    event.shaped('kubejs:sand_mold_mix', 
         [
             'AAA',
             'AAA',
@@ -117,7 +124,15 @@ ServerEvents.recipes(event => {
         'kubejs:plate_sand_mold',
         'kubejs:rod_sand_mold',
         'kubejs:gear_sand_mold'
-    ].forEach((MoldID) => {event.stonecutting((MoldID), '#createmetallurgy:sand_molds')});
+    ].forEach((MoldID) => {event.stonecutting((MoldID), 'kubejs:blank_sand_mold')});
+
+    [
+        'createmetallurgy:graphite_ingot_mold',
+        'createmetallurgy:graphite_nugget_mold',
+        'createmetallurgy:graphite_plate_mold',
+        'createmetallurgy:graphite_rod_mold',
+        'createmetallurgy:graphite_gear_mold'
+    ].forEach((MoldID) => {event.stonecutting((MoldID), 'createmetallurgy:graphite_blank_mold')})
 
 
     // #############################################################
@@ -126,6 +141,8 @@ ServerEvents.recipes(event => {
 
     // Compacting recipes
 
+    event.recipes.create.compacting('kubejs:blank_sand_mold', 'kubejs:sand_mold_mix')
+    event.recipes.create.compacting('createmetallurgy:graphite_blank_mold', 'createmetallurgy:graphite')
     // Crushing recipes
 
     // Cutting recipes
@@ -180,7 +197,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.createmetallurgy.alloying(Fluid.of('createbigcannons:molten_nethersteel', 720), [Fluid.of('createmetallurgy:molten_steel', 360), 'minecraft:netherite_scrap'], 400)
     event.recipes.createmetallurgy.alloying(Fluid.of('createbigcannons:molten_nethersteel', 720), [Fluid.of('createbigcannons:molten_cast_iron', 720), 'minecraft:netherite_scrap'], 500)
-
+    
     // Bulk Melting recipes
 
     // Casting In Table recipes

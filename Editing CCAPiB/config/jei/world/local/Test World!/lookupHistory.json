@@ -1,0 +1,14 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"createnuclear:graphite_rod"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createmetallurgy:graphite_blank_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createmetallurgy:graphite"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:blank_sand_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createmetallurgy:graphite_ingot_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:gear_sand_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:plate_sand_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:nugget_sand_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:ingot_sand_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:sand_mold_mix"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"kubejs:rod_sand_mold"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
