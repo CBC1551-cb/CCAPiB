@@ -40,3 +40,16 @@ StartupEvents.registry('item', event => {
 //                                         Fluids
 // #######################################################################################
 // #######################################################################################
+StartupEvents.registry('fluid', event => {
+    event.create('molten_andesite_alloy')
+    .displayName('Molten Andesite Alloy')
+    .tint(0x3F76E4)
+    .type(type => type
+        .renderType('solid')
+        .stillTexture('kubejs:block/example_block')
+        .flowingTexture('kubejs:block/example_block')
+        .canSwim(false)
+        .canDrown(false)
+        .density(3000)
+        .viscosity(6000))
+})

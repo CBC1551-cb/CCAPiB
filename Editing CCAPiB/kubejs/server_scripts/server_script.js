@@ -58,7 +58,8 @@ ServerEvents.recipes(event => {
     // Remove by recipe ID
     [
         'tfmg:casting/steel',
-        'createmetallurgy:crafting/materials/graphite'
+        'createmetallurgy:crafting/materials/graphite',
+        'createmetallurgy:alloying/steel'
     ].forEach((RecipeID) => {event.remove({id: (RecipeID)})});
 
     // Remove by recipe Type
@@ -194,7 +195,7 @@ ServerEvents.recipes(event => {
     // #############################################################
 
     // Alloying recipes
-
+    event.recipes.createmetallurgy.alloying(Fluid.of('createmetallurgy:molten_steel', 360), [Fluid.of('createmetallurgy:molten_iron', 360), 'tfmg:coal_coke'], 200)
     event.recipes.createmetallurgy.alloying(Fluid.of('createbigcannons:molten_nethersteel', 720), [Fluid.of('createmetallurgy:molten_steel', 360), 'minecraft:netherite_scrap'], 400)
     event.recipes.createmetallurgy.alloying(Fluid.of('createbigcannons:molten_nethersteel', 720), [Fluid.of('createbigcannons:molten_cast_iron', 720), 'minecraft:netherite_scrap'], 500)
     
@@ -206,6 +207,7 @@ ServerEvents.recipes(event => {
     event.recipes.createmetallurgy.casting_in_table('tfmg:steel_ingot', [Fluid.of('createmetallurgy:molten_steel', 90), 'kubejs:ingot_sand_mold'], 100, true)
     event.recipes.createmetallurgy.casting_in_table('tfmg:heavy_plate', [Fluid.of('createmetallurgy:molten_steel', 90), 'createmetallurgy:graphite_plate_mold'], 100, false)
     event.recipes.createmetallurgy.casting_in_table('tfmg:steel_ingot', [Fluid.of('createmetallurgy:molten_steel', 90), 'createmetallurgy:graphite_ingot_mold'], 100, false)
+    event.recipes.createmetallurgy.casting_in_table('tfmg:rebar', [Fluid.of('createmetallurgy:molten_steel', 45), 'kubejs:rod_sand_mold'], 50, true)
 
     // Casting In Basin recipes
 
@@ -221,6 +223,7 @@ ServerEvents.recipes(event => {
     //                   Create Big Cannons recipes
     // #############################################################
 
+    
     
 })
 //#endregion
